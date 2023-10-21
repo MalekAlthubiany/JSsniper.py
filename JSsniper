@@ -1,0 +1,70 @@
+import re
+import requests
+
+# Python Diagram
+print(f" ___     _____  _____ ____     ____  ____     ___  ____") 
+print(f"|    | / ___/ / ___/|    \  |    ||    \   /  _]|    \ ") 
+print(f"|__  |(   \_ (   \_ |  _  |  |  | |  o  ) /  [_ |  D  ) ") 
+print(f" __|  | \__  | \__  ||  |  | |  | |   _/ |    _]|    / ") 
+print(f"/  |  | /  \ | /  \ ||  |  | |  | |  |   |   [_ |    \ ") 
+print(f"\  `  | \    | \    ||  |  | |  | |  |   |     ||  .  \ ") 
+print(f"\____j  \___|  \___||__|__||____||__|   |_____||__|\_|") 
+                                   
+
+# Signature
+print("\nScript by Malek Althubiany")
+print("=" * 100)
+
+def extract_information(url):
+    try:
+        # Fetch the JavaScript file content from the URL
+        response = requests.get(url)
+        javascript_code = response.text
+
+        # Extract function names
+        functions = re.findall(r'function\s+([^\s(]+)\s*\(', javascript_code)
+
+        # Extract variable assignments
+        variables = re.findall(r'var\s+([^\s=]+)\s*=', javascript_code)
+
+        # Extract potential sensitive information (e.g., API keys)
+        sensitive_info = re.findall(r'(["\']?[A-Za-z_]["\']?\s*:\s*["\']?[A-Za-z0-9_\-]+["\']?)', javascript_code)
+
+        # Print the extracted information
+        print(f"\n{'=' * 100}")
+        print(f"  Information for {url}  ")
+        print(f"{'=' * 100}")
+        print(f"Functions: {functions}")
+        print(f"Variables: {variables}")
+        print(f"Sensitive Information: {sensitive_info}")
+        print("=" * 100)
+    
+    except Exception as e:
+        print(f"Error processing {url}: {e}")
+
+# Read JavaScript file URLs from a text file
+def read_urls_from_file(file_path):
+    with open(file_path, 'r') as file:
+        return [line.strip() for line in file]
+
+# Get user input for URL or file
+choice = input("Choose an option:\n1. Enter a single URL\n2. Enter the path to a text file\n")
+
+if choice == '1':
+    # Get single URL from user input
+    url = input("Enter the JavaScript file URL: ")
+    extract_information(url)
+
+elif choice == '2':
+    # Get file path from user input
+    file_path = input("Enter the path to the file containing JavaScript file URLs: ")
+    
+    # Read JavaScript file URLs from the file
+    javascript_urls = read_urls_from_file(file_path)
+
+    # Process each URL
+    for url in javascript_urls:
+        extract_information(url)
+
+else:
+    print("Invalid choice. Please choose 1 or 2.")
