@@ -1,36 +1,61 @@
-# JSsniper.py
-"JSsniper" The script is a Python program designed to extract information from JavaScript files obtained from either a single URL or a list of URLs provided in a text file.
-JS Sniper
+# JS Sniper
 
-Features
-Asynchronous processing of URLs for efficient extraction.
-Detection of various sensitive information, including API keys, access tokens, and more.
-Support for both single URL input and batch processing from a file containing multiple URLs.
-Getting Started
-Prerequisites
-Python 3.x
+**JS Sniper** is a Python script designed to extract information from JavaScript files obtained from either a single URL or a list of URLs provided in a text file.
 
+## Features
 
-Usage
-python js_sniper.py
-Choose an option:
-Enter a single URL.
-Enter a file path containing multiple URLs.
+- Asynchronous processing of URLs for efficient extraction.
+- Detection of various sensitive information, including API keys, access tokens, and more.
+- Support for both single URL input and batch processing from a file containing multiple URLs.
 
-Examples
-Single URL
-python js_sniper.py
+## Table of Contents
 
-Multiple URLs from File
-python js_sniper.py
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Examples](#examples)
+- [Recommendations](#recommendations)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-Recommendations
-If errors occur during processing, review and check the affected URLs manually.
-No sensitive information identified in the processed URLs if no valid pages.
+## Getting Started
 
-#Install required dependencies using the following command:
+### Prerequisites
+
+Ensure you have the following prerequisites installed before running JS Sniper:
+
+- **Python 3.x:** Make sure you have Python 3.x installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+
+- **Dependencies:** Install the required dependencies using the following commands:
+
+    ```bash
+    pip install aiohttp colorama request
+    ```
+
+    These commands install the necessary libraries for asynchronous HTTP requests (`aiohttp`), colored terminal output (`colorama`), handling HTTP requests (`request`), and asynchronous programming (`asyncio`).
+
+### Installation
+
+No specific installation is required. Simply clone or download the script and ensure you have the prerequisites installed.
+
+## Usage
+
+1. Run the script:
+
+    ```bash
+    python js_sniper.py
+    ```
+
+2. Choose an option:
+    - Enter a single URL.
+    - Enter a file path containing multiple URLs.
+
+### Examples
+
+#### Single URL
+
 ```bash
-  pip install aiohttp colorama
-  pip install request
-  pip install aiohttp
-  pip install asyncio
+python js_sniper.py
+# Enter the URL: [Your URL]
