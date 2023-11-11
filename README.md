@@ -11,10 +11,10 @@ Prerequisites
 Python 3.x
 
 Install required dependencies using the following command:
-pip install aiohttp colorama
-pip install reguest
-pip install aiohttp
-pip install asyncio
+# pip install aiohttp colorama
+# pip install reguest
+# pip install aiohttp
+# pip install asyncio
 
 Usage
 python js_sniper.py
