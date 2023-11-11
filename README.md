@@ -10,12 +10,6 @@ Getting Started
 Prerequisites
 Python 3.x
 
-Install required dependencies using the following command:
-```bash
-  pip install aiohttp colorama
-  pip install request
-  pip install aiohttp
-  pip install asyncio
 
 Usage
 python js_sniper.py
@@ -33,3 +27,10 @@ python js_sniper.py
 Recommendations
 If errors occur during processing, review and check the affected URLs manually.
 No sensitive information identified in the processed URLs if no valid pages.
+
+#Install required dependencies using the following command:
+```bash
+  pip install aiohttp colorama
+  pip install request
+  pip install aiohttp
+  pip install asyncio
