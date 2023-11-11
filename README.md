@@ -1,5 +1,7 @@
 # JS Sniper
 
+![JS Sniper output]([url_to_image](https://github.com/MalekAlthubiany/JSsniper.py/blob/main/Screenshot_2.png))
+
 **JS Sniper** is a Python script designed to extract information from JavaScript files obtained from either a single URL or a list of URLs provided in a text file.
 
 ## Features
