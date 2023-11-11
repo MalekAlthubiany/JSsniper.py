@@ -16,9 +16,7 @@
 - [Usage](#usage)
   - [Examples](#examples)
 - [Recommendations](#recommendations)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Contact](#Contact)
 
 ## Getting Started
 
@@ -31,7 +29,10 @@ Ensure you have the following prerequisites installed before running JS Sniper:
 - **Dependencies:** Install the required dependencies using the following commands:
 
     ```bash
-    pip install aiohttp colorama request
+    pip install aiohttp colorama
+    pip install request
+    pip install aiohttp
+    pip install asyncio
     ```
 
     These commands install the necessary libraries for asynchronous HTTP requests (`aiohttp`), colored terminal output (`colorama`), handling HTTP requests (`request`), and asynchronous programming (`asyncio`).
@@ -59,3 +60,15 @@ No specific installation is required. Simply clone or download the script and en
 ```bash
 python js_sniper.py
 # Enter the URL: [Your URL]
+```
+
+### Recommendations
+If errors occur during processing, review and check the affected URLs manually.
+No sensitive information identified in the processed URLs if no valid pages.
+
+### Contact
+Please if you have any questions or comments feel free to contact me, 
+Twitter @PerhapsMalek
+Linkedin @MalekAlthubiany
+
+
