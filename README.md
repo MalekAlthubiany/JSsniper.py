@@ -70,8 +70,8 @@ No sensitive information identified in the processed URLs if no valid pages.
 
 ### Contact
 Please if you have any questions or comments feel free to contact me, 
-![Twitter](https://twitter.com/perhapsmalek)
-![LinkedIn](https://www.linkedin.com/in/malek-althubiany-b82b65197/)
+[Twitter](https://twitter.com/perhapsmalek)
+[LinkedIn](https://www.linkedin.com/in/malek-althubiany-b82b65197/)
 
 
 
