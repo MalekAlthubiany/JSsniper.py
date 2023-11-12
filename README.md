@@ -60,8 +60,9 @@ No specific installation is required. Simply clone or download the script and en
 #### Single URL
 
 ```bash
-python js_sniper.py
-# Enter the URL: [Your URL]
+python jssniper.py
+# choose 1 for a snigle url
+# choose 2 for a txt file 
 ```
 
 ### Recommendations
