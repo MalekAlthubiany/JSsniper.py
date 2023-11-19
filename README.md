@@ -48,7 +48,7 @@ No specific installation is required. Simply clone or download the script and en
 1. Run the script:
 
     ```bash
-    python js_sniper.py
+    python jssniper.py
     ```
 
 2. Choose an option:
